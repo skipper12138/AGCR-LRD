@@ -6,4 +6,3 @@ You can download them from the following release link:
 👉 https://github.com/skipper12138/AGCR-LRD/releases/tag/datasets
 
 After downloading, place the .mat files in the appropriate data folder to run the code
-*.m linguist-language=MATLAB
