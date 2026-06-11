@@ -22,5 +22,19 @@ para_TRC_FDPC.operator_name = 'max'; % use 'max' operator for Eq.(8)
 % Selection
 band_set = ocf(para_TRC_FDPC, band_num);
 sort(band_set)
-% % 从data1中选择相应的波段组成一个集合
-% data11=data1(:,band_set);
+% 从data1中选择相应的波段组成一个集合
+%data11=data1(:,band_set);
+
+
+% %% 不同的波段对比：波段选择（随机选择 3 个波段）
+% % 假设 X 已经定义（波段数×样本数），或您已知波段总数 L
+% L = size(X, 1);          % 波段总数
+% band_num = 3;            % 需要选择的波段个数
+% 
+% % 随机选择 band_num 个互不相同的波段索引
+% band_set = randperm(L, band_num);
+% % band_set = sort(band_set);
+% 
+% % 显示结果
+% disp(band_set);
+% % 
